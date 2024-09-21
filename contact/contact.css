@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* Container for the two sections */
+.container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    max-width: 1500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left side: text side */
+.text-side {
+    flex: 1;
+    background-color: rgb(141, 141, 227);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-side h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-side p {
+    font-size: 18px;
+}
+
+/* Right side: form side */
+.form-side {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="tel"] 
+/* for input[type="conditions"] */
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(176, 176, 227);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}

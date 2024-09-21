@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Sided Form Layout</title>
+    <link rel="stylesheet" href="contact.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left side with large text -->
+        <div class="text-side">
+            <h1>You are One Step</h1>
+            <h1 colour="blue">Away from </h1>
+            <h1>Living a healthy Life</h1>
+            <!-- <p>Join us today for a better experience. Please fill out the form to get started.</p> -->
+            
+        
+            <i class="fa-solid fa-house-chimney-medical icon1"></i>
+            <h1 class="logo">WellCure</h1>
+            
+       
+        </div>
+        
+
+        <!-- Right side with input form -->
+        <div class="form-side">
+            <form id="inputForm" onsubmit="handleSubmit(); return false;">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter Your Name" id="name" name="name" required>
+
+                <label for="age">Age</label>
+                <input type="number" placeholder="Enter Your Age" id="age" name="age" required>
+
+                <label for="contact">Contact Number</label>
+                <input type="number" placeholder="Enter Your contact number" id="contact" name="contact" required>
+
+                <!-- <div class="checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div> -->
+                <div class="input">
+                    <label for="conditions">Your Conditions.</label>
+                    <input type="text" placeholder="Feel Free to dicuss your conditionwith us...." name="" id="">
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

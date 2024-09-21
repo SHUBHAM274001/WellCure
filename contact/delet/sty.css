@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Center the table */
+    align-items: center;
+    height: 100vh; /* Full screen height */
+}
+
+.table-column {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+}
+
+.table-cell {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0; /* Add vertical space between cells */
+    border-radius: 15px; /* Rounded corners */
+    width: 200px; /* Fixed width for each div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+

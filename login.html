@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="handleSubmit(); return false;">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Gmail</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Gmail" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Option to continue with Google -->
+        <div class="google-login">
+            <button class="google-btn">Continue with Google</button>
+        </div>
+
+        <!-- Sign up link -->
+        <p>Don't have an account? <a href="./sign-up/sign.html" class="signup-link">Sign In</a></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

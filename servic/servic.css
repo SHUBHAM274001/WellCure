@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-side {
+    flex: 1;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-side {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-side img {
+    max-width: 90%;
+    height: auto;
+}
